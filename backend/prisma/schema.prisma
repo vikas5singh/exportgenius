@@ -1,0 +1,32 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  status    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  media     Media[] 
+}
+
+model Media {
+  id           Int      @id @default(autoincrement())
+  originalPath String
+  processedPath String?
+  scheduledFor DateTime?
+  scheduledDate String?
+  scheduledTime String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  published    Boolean  @default(false)
+  userId       Int      
+  user         User     @relation(fields: [userId], references: [id])
+}
