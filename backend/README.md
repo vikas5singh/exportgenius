@@ -1,10 +1,10 @@
-# TODO App Backend
+# Image Upload App Backend
 
-This is a simple TODO app backend built with Node.js, Express, Prisma, and MongoDB. It provides RESTful API endpoints for managing TODO items.
+This is a simple Image Upload app backend built with Node.js, Express, Prisma, and MySql. It provides RESTful API endpoints for managing Image Upload items.
 
 ## Table of Contents
 
-- [TODO App Backend](#todo-app-backend)
+- [Image App Backend](#image-app-backend)
   - [Table of Contents](#table-of-contents)
   - [Prerequisites](#prerequisites)
   - [Getting Started](#getting-started)
@@ -14,16 +14,16 @@ This is a simple TODO app backend built with Node.js, Express, Prisma, and Mongo
     - [Generate Prisma Client](#generate-prisma-client)
     - [Run the Server](#run-the-server)
   - [API Endpoints](#api-endpoints)
-    - [Create a TODO](#create-a-todo)
-    - [Get All TODOs](#get-all-todos)
-    - [Get a TODO by ID](#get-a-todo-by-id)
-    - [Update a TODO](#update-a-todo)
-    - [Delete a TODO](#delete-a-todo)
+    - [Create a Image Upload](#create)
+    - [Get All Image list](#ge)
+    - [Get a Image by id](#get)
+    - [Update a Image](#update)
+    - [Delete a Image](#delete)
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) (version 14 or higher)
 - [npm](https://www.npmjs.com/) (version 6 or higher)
-- [MongoDB](https://www.mongodb.com/) (local installation or MongoDB Atlas)
+- [MySql](https://www.mysql.com/) (local installation or MySql server)
 
 ## Getting Started
 
@@ -35,5 +35,5 @@ This is a simple TODO app backend built with Node.js, Express, Prisma, and Mongo
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/Amang9446/to-do-backend.git
-cd todo-app-backend
+git clone https://github.com/vikas5singh/exportgenius.git
+cd image-app-backend
